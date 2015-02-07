@@ -23,18 +23,30 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3s-jR-uUV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Real Converter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKI-ty-ydb">
+                                <rect key="frame" x="70" y="104" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3s-jR-uUV">
                                 <rect key="frame" x="283" y="65" width="156" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Human Years Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="foo-wj-ptl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5S-IG-PMi">
+                                <rect key="frame" x="283" y="104" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Human Years Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="foo-wj-ptl">
                                 <rect key="frame" x="70" y="179" width="460" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHa-ei-bIE">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHa-ei-bIE">
                                 <rect key="frame" x="226" y="230" width="149" height="30"/>
                                 <state key="normal" title="Convert To Dog Years">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -43,29 +55,58 @@
                                     <action selector="convertToDogYearsButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HcJ-xb-E0T"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Strawberry.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZTl-wB-WvX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Strawberry.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZTl-wB-WvX">
                                 <rect key="frame" x="20" y="292" width="560" height="300"/>
                                 <color key="backgroundColor" red="0.24313727020000001" green="0.95686280729999995" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="3QD-Lh-8Ns"/>
+                                </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QaA-0g-WVw">
+                                <rect key="frame" x="404" y="230" width="126" height="30"/>
+                                <state key="normal" title="Real Year Converter">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="convertToDogYearsButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9qs-yc-9Ls"/>
+                                    <action selector="convertToRealDogYearsButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DH5-4j-Hmc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="YHa-ei-bIE" secondAttribute="centerX" id="0D3-Af-EUx"/>
                             <constraint firstAttribute="centerX" secondItem="ZTl-wB-WvX" secondAttribute="centerX" id="0KQ-az-1BP"/>
+                            <constraint firstItem="foo-wj-ptl" firstAttribute="top" secondItem="rKI-ty-ydb" secondAttribute="bottom" constant="30" id="29I-BK-rhe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e3s-jR-uUV" secondAttribute="trailing" constant="20" id="4Ac-Xg-HCR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QaA-0g-WVw" secondAttribute="trailing" constant="20" id="BkP-Qd-nef"/>
                             <constraint firstItem="snV-rd-I1T" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="DVF-36-8xw"/>
                             <constraint firstAttribute="centerX" secondItem="foo-wj-ptl" secondAttribute="centerX" id="EvN-7c-psq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="foo-wj-ptl" secondAttribute="trailing" constant="20" id="FpD-tD-DeP"/>
+                            <constraint firstItem="ZTl-wB-WvX" firstAttribute="top" secondItem="QaA-0g-WVw" secondAttribute="bottom" constant="20" id="PSN-Fl-HYV"/>
                             <constraint firstItem="ZTl-wB-WvX" firstAttribute="top" secondItem="YHa-ei-bIE" secondAttribute="bottom" constant="20" id="V7U-ZX-eXg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZTl-wB-WvX" secondAttribute="trailing" constant="10" id="ZdE-da-69L"/>
                             <constraint firstItem="YHa-ei-bIE" firstAttribute="top" secondItem="foo-wj-ptl" secondAttribute="bottom" constant="10" id="ZkO-eu-xic"/>
                             <constraint firstItem="ZTl-wB-WvX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="d94-9V-1Xt"/>
                             <constraint firstItem="snV-rd-I1T" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="dmd-PE-Z2Z"/>
+                            <constraint firstItem="l5S-IG-PMi" firstAttribute="top" secondItem="e3s-jR-uUV" secondAttribute="bottom" constant="20" id="eWQ-dD-fVx"/>
                             <constraint firstItem="e3s-jR-uUV" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="ffy-4x-IpX"/>
                             <constraint firstItem="foo-wj-ptl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="gs6-fn-InH"/>
+                            <constraint firstItem="rKI-ty-ydb" firstAttribute="top" secondItem="snV-rd-I1T" secondAttribute="bottom" constant="20" id="iWQ-YE-GvG"/>
+                            <constraint firstItem="rKI-ty-ydb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="mvM-UW-7FX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l5S-IG-PMi" secondAttribute="trailing" constant="20" id="nAp-xQ-b2o"/>
+                            <constraint firstItem="foo-wj-ptl" firstAttribute="top" secondItem="l5S-IG-PMi" secondAttribute="bottom" constant="30" id="qXu-aB-Eyn"/>
+                            <constraint firstItem="QaA-0g-WVw" firstAttribute="top" secondItem="foo-wj-ptl" secondAttribute="bottom" constant="10" id="t6P-o9-LUZ"/>
+                            <constraint firstItem="YHa-ei-bIE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="tqV-Mi-V6T"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0D3-Af-EUx"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
+                        <outlet property="realYearsLabel" destination="l5S-IG-PMi" id="p3E-0L-PhV"/>
                         <outlet property="yearsLabel" destination="e3s-jR-uUV" id="zkA-VM-Ff6"/>
                         <outlet property="yearsTextField" destination="foo-wj-ptl" id="01g-mN-l4q"/>
                     </connections>
