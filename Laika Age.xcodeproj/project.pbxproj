@@ -14,6 +14,7 @@
 		DFB0EA731A859414000158D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB0EA721A859414000158D7 /* Images.xcassets */; };
 		DFB0EA761A859414000158D7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFB0EA741A859414000158D7 /* LaunchScreen.xib */; };
 		DFB0EA821A859414000158D7 /* Laika_AgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB0EA811A859414000158D7 /* Laika_AgeTests.m */; };
+		DFB0EA8C1A85984D000158D7 /* Strawberry.png in Resources */ = {isa = PBXBuildFile; fileRef = DFB0EA8B1A85984D000158D7 /* Strawberry.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		DFB0EA7B1A859414000158D7 /* Laika AgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Laika AgeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB0EA801A859414000158D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFB0EA811A859414000158D7 /* Laika_AgeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Laika_AgeTests.m; sourceTree = "<group>"; };
+		DFB0EA8B1A85984D000158D7 /* Strawberry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Strawberry.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		DFB0EA651A859414000158D7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DFB0EA8B1A85984D000158D7 /* Strawberry.png */,
 				DFB0EA661A859414000158D7 /* Info.plist */,
 				DFB0EA671A859414000158D7 /* main.m */,
 			);
@@ -201,6 +204,7 @@
 			files = (
 				DFB0EA711A859414000158D7 /* Main.storyboard in Resources */,
 				DFB0EA761A859414000158D7 /* LaunchScreen.xib in Resources */,
+				DFB0EA8C1A85984D000158D7 /* Strawberry.png in Resources */,
 				DFB0EA731A859414000158D7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

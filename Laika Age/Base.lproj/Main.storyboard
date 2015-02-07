@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,65 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dog Years" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snV-rd-I1T">
+                                <rect key="frame" x="70" y="65" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3s-jR-uUV">
+                                <rect key="frame" x="283" y="65" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Human Years Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="foo-wj-ptl">
+                                <rect key="frame" x="70" y="179" width="460" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHa-ei-bIE">
+                                <rect key="frame" x="226" y="230" width="149" height="30"/>
+                                <state key="normal" title="Convert To Dog Years">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="convertToDogYearsButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HcJ-xb-E0T"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Strawberry.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZTl-wB-WvX">
+                                <rect key="frame" x="20" y="292" width="560" height="300"/>
+                                <color key="backgroundColor" red="0.24313727020000001" green="0.95686280729999995" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="YHa-ei-bIE" secondAttribute="centerX" id="0D3-Af-EUx"/>
+                            <constraint firstAttribute="centerX" secondItem="ZTl-wB-WvX" secondAttribute="centerX" id="0KQ-az-1BP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e3s-jR-uUV" secondAttribute="trailing" constant="20" id="4Ac-Xg-HCR"/>
+                            <constraint firstItem="snV-rd-I1T" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="DVF-36-8xw"/>
+                            <constraint firstAttribute="centerX" secondItem="foo-wj-ptl" secondAttribute="centerX" id="EvN-7c-psq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="foo-wj-ptl" secondAttribute="trailing" constant="20" id="FpD-tD-DeP"/>
+                            <constraint firstItem="ZTl-wB-WvX" firstAttribute="top" secondItem="YHa-ei-bIE" secondAttribute="bottom" constant="20" id="V7U-ZX-eXg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZTl-wB-WvX" secondAttribute="trailing" constant="10" id="ZdE-da-69L"/>
+                            <constraint firstItem="YHa-ei-bIE" firstAttribute="top" secondItem="foo-wj-ptl" secondAttribute="bottom" constant="10" id="ZkO-eu-xic"/>
+                            <constraint firstItem="ZTl-wB-WvX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="d94-9V-1Xt"/>
+                            <constraint firstItem="snV-rd-I1T" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="dmd-PE-Z2Z"/>
+                            <constraint firstItem="e3s-jR-uUV" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="ffy-4x-IpX"/>
+                            <constraint firstItem="foo-wj-ptl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="gs6-fn-InH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="yearsLabel" destination="e3s-jR-uUV" id="zkA-VM-Ff6"/>
+                        <outlet property="yearsTextField" destination="foo-wj-ptl" id="01g-mN-l4q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Strawberry.png" width="48" height="48"/>
+    </resources>
 </document>
