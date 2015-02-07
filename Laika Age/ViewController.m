@@ -42,7 +42,7 @@
         dogYears = (10.5 *2) + ((humanYears -2) * 4);
     }
     else {
-        dogYears = 9.5 * humanYears;
+        dogYears = 10.5 * humanYears;
     }
     
     /* Next we update the label to show the number of dog years.  In order to display the realDogYears float variable as text on our screen we must convert the float variable to an NSString.  NSStrings, which we will learn about in our Objects section, allows us to package characters together. */
